@@ -12,7 +12,7 @@
             <nav >
                 <span><img width="53" src="Netflix_Logo_PMS.png" alt="Netflix_Logo_PMS.png"></span>
 <div>
-    <button>English</button>
+    <button class="btn btn-grey-sm">English</button>
     <button class="btn btn-red-sm">Sign In </button>
     
 
@@ -23,15 +23,45 @@
     </div>
     <div class="hero">
       <h1><span>  Enjoy big movies,hit series and more from $149.</span></h1>
-        <h4>
-        <span>  join today.Cancel anytime.</span></h4>
-        <span> redy to watch enter your email create or restart your membership.</span>
-
+        <h2>
+        <span>  join today.Cancel anytime.</span></h2>
+        <h3><span> redy to watch enter your email create or restart your membership.</span>
+<!-- </h3>
         <div>
             <input type="text" placeholder="Email Address">
-            <button class="btn btn-red">Get started </button>
+            <button class="btn btn-red">Get started &gt; </button>
           </div>
-       </div>
+       </div> -->
+       <div>
+        <input id="email" type="text" class="email-input" placeholder="Email Address" oninput="changeTextColor()">
+        <button class="btn btn-red">Get started &gt; </button>
     </div>
+
+    <script>
+        function changeTextColor() {
+            var emailInput = document.getElementById('email');
+            if (emailInput.value !== '') {
+                emailInput.style.color = 'white'; // Change the font color to white
+            } else {
+                emailInput.style.color = 'black'; // Default color when input is empty
+            }
+        }
+    </script>
+    </div>
+<section class="first">
+    <div>
+       Enjoy your Tv. 
+        watch on smart Tv, playstation,Xbox ,chormcast,AppleTv,
+        Blue ray players and more. 
+
+    </div>
+    <div class="secimg">
+    <img src="stock-photo-people-watching-netflix-2450288567(1).jpg"
+
+
+    </div>
+
+</section>
+
 </body>
 </html>

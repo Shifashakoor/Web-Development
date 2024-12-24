@@ -11,8 +11,13 @@
     background-size: 100vw;
     background-repeat: no-repeat;
     position: relative;
+    background-color: black;
 
 
+}
+body{
+background-color: black;
+color: white;
 }
 .main .box{
     height: 80vh;
@@ -49,6 +54,8 @@ color: black;
 transform: scale(1.05);
 outline: none; /* Remove default focus outline */
 box-shadow: 0 0 5px rgba(0, 123, 255, 0.6); /* Blue shadow for focus */
+font-weight: 400;
+border-radius: 3px;
 
 }
 .hero{
@@ -60,20 +67,37 @@ box-shadow: 0 0 5px rgba(0, 123, 255, 0.6); /* Blue shadow for focus */
     flex-direction: column;
     color: white;
     padding: 23px;
+    font-weight: 400;
 
     
+}
+.hero h1 {
+    margin-bottom: 20px; /* Spacing between h1 and h4 */
+}
+
+.hero h4 {
+    margin-bottom: 20px; /* Spacing between h4 and the following text */
+}
+.hero h3{
+
+}
+
+.hero span {
+    display: block; /* Makes each span appear on its own line */
+    margin-bottom: 20px; /* Adds spacing between the spans */
 }
 .btn-red-sm{
     background-color: rgb(230, 8, 8);
     color: white;
-    padding: 3px 24px;
+    padding: 1px 5px;
+    cursor: pointer;
 
 }
 .btn-red{
     background-color: red;
     color:white;
     width: 150x;
-    padding: 8px 15px; /* Smaller padding for the small button */
+    padding: 5px 10px; /* Smaller padding for the small button */
     font-size: 14px; 
 
 }
@@ -86,8 +110,67 @@ input[type="text"] {
     width: 150px; /* Width of the input field */
     outline: none; /* Remove default outline */
     transition: border-color 0.3s; /* Smooth transition for border color */
-    background-color: rgb(12, 12, 12);
+    background-color:black;
+    
 }
+.btn-grey-sm{
+    background-color: rgb(12, 12, 12);
+    color: white;
+    padding: 1px 5px;
+}
+    .saparation{
+        height: 7px;
+        background-color: black;
+    }
+    .main input{
+        /* padding: 7px 101px 8px 14px; */
+        font-weight: 900;
+        font-size: 12px;
+        border-radius: 4px;
+        background-color:  rgb(12, 12, 12);
+        border: 1px solid  rgba(246, 238, 238, 0.5);
+        cursor: pointer;
+        color: white;
+        
+        
+    }
+    #email {
+        cursor: pointer; /* Default pointer cursor when hovering */
+    }
+
+    /* Change cursor style when the input is focused */
+    #email:focus {
+        cursor: text; /* Text cursor when the input is focused */
+    }
+    .first{
+        display: flex;
+        align-items: center;
+        justify-content: center ;
+        position: relative;
+        z-index: 10;
+        max-width: 70vw;
+        margin:auto;
+        color: white;
+      
+    }
+    .secimg img{
+width: 35vw;
+height: 35vh;
+top: 10px;
+padding: 15px;
+position: relative; 
+z-index: 10;
+margin: auto;
+
+    }
+    section.first> div:nth-child(1){
+        font-size: 48;
+        font-weight: bolder;
+    }
+  
+    
+
+
 
 
 
